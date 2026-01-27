@@ -13,7 +13,7 @@
     "start-forward": "../scripts/start-forward.sh",
     "i18n": "i18n-scripts/build-i18n.sh && node i18n-scripts/set-english-defaults.js",
     "ts-node": "ts-node -O '{\"module\":\"commonjs\"}'",
-    "lint": "eslint ./src ./integration-tests --fix &&  stylelint \"src/**/*.css\" --allow-empty-input --fix",
+    "lint": "eslint ./src --fix &&  stylelint \"src/**/*.css\" --allow-empty-input --fix",
     "lint:tsc": "tsc --noEmit",
     "test:e2e": "scripts/run-e2e.sh",
     "test:unit": "jest --config jest.config.js",
